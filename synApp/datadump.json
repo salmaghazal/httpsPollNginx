@@ -1,0 +1,293 @@
+[
+{
+  "model": "polls.question",
+  "pk": 2,
+  "fields": {
+    "question_text": "What is the capital city of Iran?",
+    "pub_date": "2023-02-21T20:12:19Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 3,
+  "fields": {
+    "question_text": "What is the capital city of Micronesia?",
+    "pub_date": "2023-02-21T20:14:41Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 4,
+  "fields": {
+    "question_text": "What is the capital city of Azerbaijan?",
+    "pub_date": "2023-02-21T20:15:29Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 5,
+  "fields": {
+    "question_text": "What is the capital city of Georgia?",
+    "pub_date": "2023-02-21T20:18:39Z"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 1,
+  "fields": {
+    "question": 2,
+    "choice_text": "Amman",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 2,
+  "fields": {
+    "question": 2,
+    "choice_text": "Beirut",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 3,
+  "fields": {
+    "question": 2,
+    "choice_text": "Tehran",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 4,
+  "fields": {
+    "question": 3,
+    "choice_text": "Palikir",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 5,
+  "fields": {
+    "question": 3,
+    "choice_text": "Pohnpei",
+    "votes": 2
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 6,
+  "fields": {
+    "question": 3,
+    "choice_text": "Chuuk",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 7,
+  "fields": {
+    "question": 4,
+    "choice_text": "Shiraz",
+    "votes": 2
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 8,
+  "fields": {
+    "question": 4,
+    "choice_text": "Baku",
+    "votes": 4
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 9,
+  "fields": {
+    "question": 4,
+    "choice_text": "Gebele",
+    "votes": 3
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 10,
+  "fields": {
+    "question": 5,
+    "choice_text": "Kutaisi",
+    "votes": 2
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 11,
+  "fields": {
+    "question": 5,
+    "choice_text": "Batumi",
+    "votes": 2
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 12,
+  "fields": {
+    "question": 5,
+    "choice_text": "Tbilisi",
+    "votes": 1
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$RpnvtFYcmaWXyZekDDt7Eo$F+F6nELiKZY8yDcyYod4ah6YsYtqgH2P1urGfZk/Aug=",
+    "last_login": "2023-02-21T20:10:43.498Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "salmaghazal1761@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-17T14:36:07.000Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p5kfs3nk9wrufvgub4gl9iyw2957xj5x",
+  "fields": {
+    "session_data": ".eJxVjEEOgjAQRe_StWmclmmpS_ecoRlmBkFNSSisjHdXEha6_e-9_zKZtnXMW9UlT2IuBszpd-uJH1p2IHcqt9nyXNZl6u2u2INW282iz-vh_h2MVMdvHRUDnoeWe0RIDXt24EhaiNEFl1RBBgBsvDaBZGDkgCm25FiSDz6Y9wfNKTdR:1pUYyJ:ZkeHRk1RPInVX6PhE9PVcY9HvdfvdjRQ4e19VsWl8bY",
+    "expire_date": "2023-03-07T20:10:43.510Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-02-17T14:49:04.806Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "1",
+    "object_repr": "hiiiiiii",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Date published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-02-17T14:50:04.831Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "1",
+    "object_repr": "What is the capital city of Egypt?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question text\", \"Date published\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-02-21T20:12:21.760Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "2",
+    "object_repr": "What is the capital city of Iran?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"Amman\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Beirut\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Tehran\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-02-21T20:14:47.154Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "3",
+    "object_repr": "What is the capital city of Micronesia?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"Palikir\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Pohnpei\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Chuuk\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-02-21T20:17:08.499Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "4",
+    "object_repr": "What is the capital city of Azerbaijan?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"Shiraz\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Baku\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Gebele\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-02-21T20:18:42.255Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "5",
+    "object_repr": "What is the capital city of Georgia?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"Kutaisi\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Batumi\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Tbilisi\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-02-21T20:18:53.306Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "polls",
+      "question"
+    ],
+    "object_id": "1",
+    "object_repr": "What is the capital city of Egypt?",
+    "action_flag": 3,
+    "change_message": ""
+  }
+}
+]
