@@ -81,8 +81,8 @@ DATABASES = {
         'NAME': 'test',
         'USER': 'postgres',
         'PASSWORD': '0000',
-        'HOST': 'localhost',
-        'PORT': '5433',
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': '5432',
     }
 }
 
