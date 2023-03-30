@@ -1,5 +1,6 @@
 # Add a new comment to trigger build.
 FROM python:3.9
+LABEL org.opencontainers.image.source="https://github.com/salmaghazal/PollNginx"
 
 ENV PYTHONUNBUFFERED=1
 
