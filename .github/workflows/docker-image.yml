@@ -15,7 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build "${{ github.workspace }}/synApp" --tag my-image-name:$(date +%s)
+      run: docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/my-image-name:$(date +%s)
+      
     - name: 'Login to GitHub Container Registry'
       run: |
         echo "${{ secrets.CR_PAT }}" | docker login ghcr.io -u salmaghazal1761@gmail.com --password-stdin
