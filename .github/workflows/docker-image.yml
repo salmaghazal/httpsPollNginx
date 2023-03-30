@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/my-image-name:$(date +%s)
+   # - name: Build the Docker image
+      
       
     - name: Log in to GitHub Container Registry
       uses: docker/login-action@v1
@@ -25,4 +25,7 @@ jobs:
         password: ${{ secrets.CR_PAT }}
         
     - name: Push the Docker image to the registry
-      run: docker push ghcr.io/salmaghazal/my-image-name:$(date +%s)
+      run: |
+        docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/my-image-name:$(date +%s)
+        docker push ghcr.io/salmaghazal/my-image-name:$(date +%s)
+        
