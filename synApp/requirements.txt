@@ -10,3 +10,4 @@ tzdata==2022.7
 virtualenv==20.19.0
 virtualenv-clone==0.5.7
 psycopg2>=2.8
+Gunicorn==20.1
