@@ -41,7 +41,7 @@ services:
     volumes:
       - static:/home/code/static/
     ports: 
-      -"443:443"
+      - "443:443"
     depends_on:
       - django
       
