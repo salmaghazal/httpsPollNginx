@@ -24,7 +24,7 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.CR_PAT }}
-        
+        #
     - name: Push the Docker image to the registry
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/djpgngapp1:latest
