@@ -27,6 +27,6 @@ jobs:
         #
     - name: Push the Docker image to the registry
       run: |
-        docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/djpgngapp1:latest
-        docker push ghcr.io/salmaghazal/djpgngapp1:latest
+        docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollapp:latest
+        docker push ghcr.io/salmaghazal/pollapp:latest
         
