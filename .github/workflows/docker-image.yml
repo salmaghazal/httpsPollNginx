@@ -27,11 +27,11 @@ jobs:
         #
         
     - name: Set env
-      run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
   #
     - name: Push the Docker image to the registry
       env: 
-        IMG_TAG: ${{env.RELEASE_VERSION}}
+        IMG_TAG: ${{env.GIT_TAG}}
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:$IMG_TAG
         docker push ghcr.io/salmaghazal/pollappimage:$IMG_TAG
