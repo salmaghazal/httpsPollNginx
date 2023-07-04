@@ -29,10 +29,12 @@ jobs:
     - name: Create tag artifact
       uses: actions/upload-artifact@v2
       with:
-        IMG_TAG: ${{github.ref_name}}
+        name: ${{github.ref_name}}
         path: Release
 
     - name: Push the Docker image to the registry
+      env: 
+        IMG_TAG: ${{env.name}}
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:$IMG_TAG
         docker push ghcr.io/salmaghazal/pollappimage:$IMG_TAG
