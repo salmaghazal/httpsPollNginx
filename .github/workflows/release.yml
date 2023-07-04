@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16
       - name: setup semantic-release
-      - run: npm install -g semantic-release @semantic-release/git @semantic-release/changelog -D
+        run: npm install -g semantic-release @semantic-release/git @semantic-release/changelog -D
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
