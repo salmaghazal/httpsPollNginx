@@ -32,6 +32,6 @@ jobs:
       env: 
         IMG_TAG: ${{env.GIT_TAG}}
       run: |
-        docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:latest
-        docker push ghcr.io/salmaghazal/pollappimage:latest
+        docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:$IMG_TAG
+        docker push ghcr.io/salmaghazal/pollappimage:$IMG_TAG
         
