@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.1](https://github.com/salmaghazal/httpsPollNginx/compare/v1.1.0...v1.1.1) (2023-07-04)
+
+
+### Bug Fixes
+
+* change latest tag ([21f8d03](https://github.com/salmaghazal/httpsPollNginx/commit/21f8d03c33731acc138ec2149754df9891f14070))
+
 # [1.1.0](https://github.com/salmaghazal/httpsPollNginx/compare/v1.0.0...v1.1.0) (2023-07-04)
 
 
