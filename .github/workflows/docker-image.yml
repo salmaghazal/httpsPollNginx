@@ -25,10 +25,12 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.CR_PAT }}
         #
-    - name: GitHub Tag
-      uses: mathieudutour/github-tag-action@v6.1
+    - name: Extract Git Tag
+      run: echo "GIT_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
 
     - name: Push the Docker image to the registry
+      env: 
+        IMG_TAG: ${{env.GIT_TAG}}
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:latest
         docker push ghcr.io/salmaghazal/pollappimage:latest
