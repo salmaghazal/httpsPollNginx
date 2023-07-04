@@ -25,6 +25,9 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.CR_PAT }}
         #
+    - name: GitHub Tag
+      uses: mathieudutour/github-tag-action@v6.1
+
     - name: Push the Docker image to the registry
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:latest
