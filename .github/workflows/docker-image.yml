@@ -31,7 +31,7 @@ jobs:
   #
     - name: Push the Docker image to the registry
       env: 
-        IMG_TAG: ${{env.GIT_TAG}}
+        IMG_TAG: ${{ github.ref_name}}
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:$IMG_TAG
         docker push ghcr.io/salmaghazal/pollappimage:$IMG_TAG
