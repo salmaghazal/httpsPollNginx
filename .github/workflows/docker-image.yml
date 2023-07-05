@@ -30,6 +30,9 @@ jobs:
       run: |
         echo "GIT_TAG=`echo $(git describe --tags $(git rev-list --tags --max-count=1))`" >> $GITHUB_ENV
   #
+    - name: Display IMG_TAG value
+      run: echo "IMG_TAG = ${{ env.IMG_TAG }}"
+      
     - name: Push the Docker image to the registry
       env: 
         IMG_TAG: ${{ env.GIT_TAG }}
