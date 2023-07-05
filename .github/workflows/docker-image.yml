@@ -1,9 +1,10 @@
 name: Docker Image CI
 
 on:
-  push:
-    paths:
-      - 'release/**'
+  workflow_dispatch:
+  #push:
+   # paths:
+    #  - 'release/**'
   #pull_request:
     #branches: [ "master" ]
 
