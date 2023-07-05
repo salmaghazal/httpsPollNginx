@@ -1,4 +1,4 @@
 [flake8]
 max-line-length = 120
-ignore = E265, #ignore block comment error
+ignore = E265 #ignore block comment error
 
