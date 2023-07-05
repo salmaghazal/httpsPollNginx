@@ -18,9 +18,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flake8 autoflake
+        pip install black
     - name: Remove unused imports
       run: |
         autoflake --in-place --remove-all-unused-imports $(git ls-files '*.py')
+    - name: Format Python code
+      run: |
+          black .
     - name: Analysing the code with flake8
       run: |
         flake8 --config=.flake8 $(git ls-files '*.py')
