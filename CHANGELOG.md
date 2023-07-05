@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.2.2](https://github.com/salmaghazal/httpsPollNginx/compare/v1.2.1...v1.2.2) (2023-07-05)
+
+
+### Bug Fixes
+
+* manual trigger for docker image ci ([288dc3c](https://github.com/salmaghazal/httpsPollNginx/commit/288dc3c05959f0082f8e64a717ca980aba0bbd09))
+
 ## [1.2.1](https://github.com/salmaghazal/httpsPollNginx/compare/v1.2.0...v1.2.1) (2023-07-05)
 
 
