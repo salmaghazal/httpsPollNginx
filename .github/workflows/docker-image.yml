@@ -2,11 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    tags:
-        - 'v*.*.*'
     #branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  #pull_request:
+    #branches: [ "master" ]
 
 jobs:
 
@@ -33,7 +31,7 @@ jobs:
   #
     - name: Push the Docker image to the registry
       env: 
-        IMG_TAG: ${{ github.ref_name}}
+        IMG_TAG: $GITHUB_REF_NAME
       run: |
         docker build "${{ github.workspace }}/synApp" --tag ghcr.io/salmaghazal/pollappimage:$IMG_TAG
         docker push ghcr.io/salmaghazal/pollappimage:$IMG_TAG
