@@ -1,5 +1,7 @@
 [flake8]
 max-line-length = 120
 # ignore block comment error
-ignore = E265 
+# ignore no newline at end of file comment
+# ignore expected 1 blank line found 0, expected 2 blank lines found 1
+ignore = E265, W292, E301, E302
 
