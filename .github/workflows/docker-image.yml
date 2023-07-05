@@ -27,7 +27,10 @@ jobs:
         #
         
     - name: Set env
-      run: echo "GIT_TAG=`echo $(git describe --tags $(git rev-list --tags --max-count=1))`" >> $GITHUB_ENV
+      run: |
+        GIT_TAG=$(git describe --tags $(git rev-list --tags --max-count=1) | sed 's/[^a-zA-Z0-9._-]/_/g')
+        echo "IMG_TAG=${GIT_TAG}" >> $GITHUB_ENV
+        #echo "GIT_TAG=`echo $(git describe --tags $(git rev-list --tags --max-count=1))`" >> $GITHUB_ENV
   #
     - name: Push the Docker image to the registry
       env: 
